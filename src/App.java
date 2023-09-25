@@ -24,5 +24,14 @@ public class App {
         int summa1 = fält2[0]+fält2[1]+fält2[2]+fält2[3]+fält2[4];
         double medelvärde1 = summa1/5;
         System.out.println("Summan av fält1 och fält2 är "+summaf12+" och medelvärdet för fält 2 är "+medelvärde1);
+
+        //c
+        int[] summafält = new int[5];
+        summafält[0] = fält1[0]+fält2[0];
+        summafält[1] = fält1[1]+fält2[1];
+        summafält[2] = fält1[2]+fält2[2];
+        summafält[3] = fält1[3]+fält2[3];
+        summafält[4] = fält1[4]+fält2[4];
+        System.out.println("Summafältet är "+summafält[0]+summafält[1]+summafält[2]+summafält[3]+summafält[4]);
     }
 }
