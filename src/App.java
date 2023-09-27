@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
+
+        Scanner tangentbord = new Scanner (System.in);
 
         //a
         int[] fält1 = new int[5];
@@ -33,5 +37,15 @@ public class App {
         summafält[3] = fält1[3]+fält2[3];
         summafält[4] = fält1[4]+fält2[4];
         System.out.println("Summafältet är "+summafält[0]+summafält[1]+summafält[2]+summafält[3]+summafält[4]);
+
+        //d
+        int[] heltalsfält = new int[4];
+        System.out.println("Ange siffror: ");
+        heltalsfält[0] = tangentbord.nextInt();
+        heltalsfält[1] = tangentbord.nextInt();
+        heltalsfält[2] = tangentbord.nextInt();
+        heltalsfält[3] = tangentbord.nextInt();
+        int summa2 = heltalsfält[0]+heltalsfält[1]+heltalsfält[2]+heltalsfält[3];
+        System.out.println("Summan är: "+summa2);
     }
 }
